@@ -1,8 +1,7 @@
 # AI-desastres
 
 Para ejecutar este proyecto se ha preparado un jar con la ultima version AI-desastres.jar.
-Primero se ha de descomprimir y entrar en codigo_fuente.zip.
-Despues el programa se puede ejecutar de la siguiente forma:
+Se puede ejecutar de la siguiente forma:
 
 
 java -jar AI-desastres.jar ngrupos ncentros helicopteros seedGrupos seedCentros experiment initialSol heuristic steps k lamb stiter
