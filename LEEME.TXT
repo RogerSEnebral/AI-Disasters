@@ -1,0 +1,30 @@
+# AI-desastres
+
+Para ejecutar este proyecto se ha preparado un jar con la ultima version AI-desastres.jar.
+Primero se ha de descomprimir y entrar en codigo_fuente.zip.
+Despues el programa se puede ejecutar de la siguiente forma:
+
+
+java -jar AI-desastres.jar ngrupos ncentros helicopteros seedGrupos seedCentros experiment initialSol heuristic steps k lamb stiter
+
+Se ha de sustituir cada uno de los parametros por la siguiente información:
+- ngrupos: Número de grupos
+- ncentros: Número de centros
+- helicopteros: Número de helicopteros por centro
+- seedGrupos: Semilla para la generación de grupos
+- seedCentros: Semilla para la generación de centros
+- exoeriment: SA para Simulated Annealing, HC para Hill Climbing
+- initialSol: S1 para la solución mas sencilla, crea un viaje por grupo y los reparte entre
+              todos los helicopteros. S2 para la solucion que intenta agrupar los grupos en viajes
+- heuristic: H1 para el primer criterio, H2 para el criterio que contempla los grupos de prioridad
+
+SOLO PONER ESTOS ARGUMENTOS EN CASO DE SA
+- steps: Numero de iteraciones
+- k: k SA
+- lamb: lamb SA
+- sitier: sitier SA
+
+Ejemplos:
+
+java -jar AI-desastres.jar 100 5 1 123 123 HC S1 H1
+java -jar AI-desastres.jar 100 5 1 123 123 SA S1 H1 10000 20 0.0050 100
